@@ -56,11 +56,18 @@ class GardenManager:
         if water_level > 10:
             raise ValueError(f"Water level {water_level} is too high (max 10)")
         if sunlight_hours < 2:
-            raise ValueError(f"Sunlight hours {sunlight_hours} is too low (min 2)")
+            raise ValueError(
+                f"Sunlight hours {sunlight_hours} is too low (min 2)"
+                )
         if sunlight_hours > 12:
-            raise ValueError(f"Sunlight hours {sunlight_hours} is too high (max 12)")
+            raise ValueError(
+                f"Sunlight hours {sunlight_hours} is too high (max 12)"
+                )
 
-        print(f"{plant_name}: healthy (water: {water_level}, sun: {sunlight_hours})")
+        print(
+            f"{plant_name}: healthy (water:"
+            f"{water_level}, sun: {sunlight_hours})"
+            )
 
 
 def test_garden_management() -> None:
